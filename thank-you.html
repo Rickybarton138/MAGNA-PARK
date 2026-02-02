@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Magna Park Self Storage</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%232d5a3d' width='100' height='100' rx='12'/><rect fill='%23f8f6f3' x='20' y='35' width='60' height='30' rx='2'/></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        :root{--ink:#1a1a1a;--paper:#f8f6f3;--green:#2d5a3d;--green-dark:#234830;--green-light:#3a7550;--steel:#4a5568;--concrete:#e8e4df}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;min-height:100vh;display:flex;flex-direction:column}
+        header{background:var(--paper);padding:1.5rem 2rem;border-bottom:1px solid var(--concrete)}
+        .logo{display:flex;align-items:center;gap:.75rem;text-decoration:none;color:var(--ink);max-width:1200px;margin:0 auto}
+        .logo-icon{width:44px;height:44px;background:var(--green);border-radius:8px;display:flex;align-items:center;justify-content:center}
+        .logo-icon::before{content:'';width:24px;height:14px;border:2px solid var(--paper);border-radius:2px}
+        .logo-text{font-family:'Instrument Serif',serif;font-size:1.4rem}
+        main{flex:1;display:flex;align-items:center;justify-content:center;padding:2rem}
+        .thank-you-card{text-align:center;max-width:500px}
+        .success-icon{width:100px;height:100px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 2rem;animation:scaleIn .5s ease-out}
+        .success-icon svg{width:50px;height:50px;color:var(--paper)}
+        @keyframes scaleIn{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+        h1{font-family:'Instrument Serif',serif;font-size:2.5rem;font-weight:400;margin-bottom:1rem;animation:fadeIn .5s ease-out .2s both}
+        .message{font-size:1.1rem;color:var(--steel);margin-bottom:2rem;animation:fadeIn .5s ease-out .3s both}
+        @keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+        .next-steps{background:var(--concrete);border-radius:12px;padding:1.5rem;margin-bottom:2rem;text-align:left;animation:fadeIn .5s ease-out .4s both}
+        .next-steps h2{font-family:'Instrument Serif',serif;font-size:1.25rem;font-weight:400;margin-bottom:1rem}
+        .next-steps ul{list-style:none;color:var(--steel)}
+        .next-steps li{padding:.5rem 0;padding-left:1.75rem;position:relative}
+        .next-steps li::before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:bold}
+        .contact-info{margin-bottom:2rem;animation:fadeIn .5s ease-out .5s both}
+        .contact-info p{margin-bottom:.5rem;color:var(--steel)}
+        .contact-info a{color:var(--green);text-decoration:none;font-weight:500}
+        .contact-info a:hover{text-decoration:underline}
+        .btn-primary{display:inline-flex;align-items:center;gap:.5rem;background:var(--green);color:var(--paper);padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;transition:all .3s;animation:fadeIn .5s ease-out .6s both}
+        .btn-primary:hover{background:var(--green-dark);transform:translateY(-2px)}
+        footer{background:var(--ink);color:var(--paper);padding:1.5rem;text-align:center}
+        footer p{font-size:.85rem;opacity:.7}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <div class="logo-icon"></div>
+            <span class="logo-text">Magna Park</span>
+        </a>
+    </header>
+    <main>
+        <div class="thank-you-card">
+            <div class="success-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+            </div>
+            <h1>Thank you!</h1>
+            <p class="message">Your quote request has been received. We'll get back to you within 24 hours with pricing and availability.</p>
+            <div class="next-steps">
+                <h2>What happens next?</h2>
+                <ul>
+                    <li>We'll review your requirements</li>
+                    <li>Check container availability for your dates</li>
+                    <li>Email or call you with a personalised quote</li>
+                    <li>Answer any questions you have</li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <p>Need to speak to us sooner?</p>
+                <p><a href="tel:01202113252">📞 01202 113252</a></p>
+                <p><a href="mailto:magnaparkselfstore@outlook.com">✉️ magnaparkselfstore@outlook.com</a></p>
+            </div>
+            <a href="index.html" class="btn-primary">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                Back to Homepage
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>© 2026 Magna Park Self Storage. Part of the Astra Group.</p>
+    </footer>
+</body>
+</html>
