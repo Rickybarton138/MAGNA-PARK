@@ -1,0 +1,39 @@
+<svg width="1200" height="628" viewBox="0 0 1200 628" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="coverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d5a3d;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1a3d28;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="628" fill="url(#coverGrad)"/>
+  
+  <!-- Container graphic -->
+  <g transform="translate(750, 180)">
+    <rect x="0" y="50" width="350" height="200" rx="8" fill="#3a7550"/>
+    <line x1="50" y1="60" x2="50" y2="240" stroke="#2d5a3d" stroke-width="6"/>
+    <line x1="100" y1="60" x2="100" y2="240" stroke="#2d5a3d" stroke-width="6"/>
+    <line x1="150" y1="60" x2="150" y2="240" stroke="#2d5a3d" stroke-width="6"/>
+    <line x1="200" y1="60" x2="200" y2="240" stroke="#2d5a3d" stroke-width="6"/>
+    <line x1="250" y1="60" x2="250" y2="240" stroke="#2d5a3d" stroke-width="6"/>
+    <line x1="300" y1="60" x2="300" y2="240" stroke="#2d5a3d" stroke-width="6"/>
+    <rect x="320" y="100" width="20" height="40" rx="3" fill="#f8f6f3"/>
+    <rect x="320" y="160" width="20" height="40" rx="3" fill="#f8f6f3"/>
+    
+    <!-- Shield -->
+    <path d="M175 20 L220 35 L220 80 C220 120 175 145 175 145 C175 145 130 120 130 80 L130 35 Z" fill="#4a8c5f"/>
+    <path d="M155 70 L170 90 L200 55" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="80" y="220" font-family="Georgia, serif" font-size="72" fill="#fff">Magna Park</text>
+  <text x="80" y="290" font-family="Arial, sans-serif" font-size="28" fill="rgba(255,255,255,0.8)">Foam Insulated Container Storage</text>
+  
+  <!-- Price badge -->
+  <rect x="80" y="340" width="280" height="80" rx="12" fill="#fff"/>
+  <text x="100" y="392" font-family="Georgia, serif" font-size="36" fill="#2d5a3d">£55/week</text>
+  <text x="255" y="385" font-family="Arial, sans-serif" font-size="16" fill="#666">No VAT</text>
+  
+  <!-- Contact -->
+  <text x="80" y="500" font-family="Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.7)">01202 113252 • Bournemouth</text>
+</svg>
