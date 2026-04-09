@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /thank-you.html
+Disallow: /google0f5f5cc1b247f8c4.html
+
+Sitemap: https://www.magnaparkselfstore.co.uk/sitemap.xml
