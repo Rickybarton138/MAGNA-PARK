@@ -173,7 +173,7 @@ Each RSA uses up to 15 headlines + 4 descriptions. Google mixes and matches. Pin
 2. No VAT · No Hidden Fees
 3. Foam Insulated Containers
 4. 24/7 Drive-Up Access
-5. Call 01202 113252 *(pin position 3)*
+5. Call 01202 113255 *(pin position 3)*
 6. Secure CCTV Storage Bournemouth
 7. From Just £55 a Week
 8. Big Yellow Price, Half The Cost
@@ -186,10 +186,10 @@ Each RSA uses up to 15 headlines + 4 descriptions. Google mixes and matches. Pin
 15. Magna Park Self Store Ltd *(pin position 2)*
 
 **Descriptions (4):**
-1. Foam insulated 20ft shipping containers from £55/week. No VAT, no hidden fees, no long contracts. Call 01202 113252 for a free quote today.
+1. Foam insulated 20ft shipping containers from £55/week. No VAT, no hidden fees, no long contracts. Call 01202 113255 for a free quote today.
 2. Fits the contents of a 3-bedroom house. 24/7 drive-up access with CCTV security. Serving Bournemouth, Poole, Christchurch and Dorset.
 3. The ONLY self storage in Bournemouth with fully foam-lined containers — protects your belongings from condensation year-round. Book today.
-4. Family-run storage in Bournemouth BH11 9FA. Flexible weekly rental, no contracts. Get a free quote online or call 01202 113252.
+4. Family-run storage in Bournemouth BH11 9FA. Flexible weekly rental, no contracts. Get a free quote online or call 01202 113255.
 
 **Sitelinks (4):**
 - "Get a Quote" → /#quote
@@ -205,7 +205,7 @@ Each RSA uses up to 15 headlines + 4 descriptions. Google mixes and matches. Pin
 - No Long Contracts
 - Family Run
 
-**Call extension:** 01202 113252 (mobile-only during business hours)
+**Call extension:** 01202 113255 (mobile-only during business hours)
 
 **Structured snippets:**
 - Services: Household Storage, Business Storage, Vehicle Storage, Student Storage, Classic Car Storage
@@ -219,7 +219,7 @@ Each RSA uses up to 15 headlines + 4 descriptions. Google mixes and matches. Pin
 2. Fully Foam Insulated Units
 3. £55/Week · No VAT
 4. Drive-Up · Load Direct
-5. Call 01202 113252 *(pin pos 3)*
+5. Call 01202 113255 *(pin pos 3)*
 6. 1,360 Cubic Feet Per Container
 7. No Condensation · No Damp
 8. Secure Container Hire Dorset
@@ -243,7 +243,7 @@ Each RSA uses up to 15 headlines + 4 descriptions. Google mixes and matches. Pin
 2. 10 Mins From Poole Town
 3. Foam Insulated · No VAT
 4. Easy Access From A35 · A338
-5. Call 01202 113252 *(pin pos 3)*
+5. Call 01202 113255 *(pin pos 3)*
 6. Christchurch & Dorset Storage
 7. From Just £55 a Week
 8. Secure 24/7 Container Storage
@@ -285,7 +285,7 @@ Each RSA uses up to 15 headlines + 4 descriptions. Google mixes and matches. Pin
 8. Better Security · Lower Price
 
 **Descriptions:**
-1. Comparable space at half the price. £55/week with no VAT, vs £150+ at chain storage. Same security, better insulation. Call 01202 113252.
+1. Comparable space at half the price. £55/week with no VAT, vs £150+ at chain storage. Same security, better insulation. Call 01202 113255.
 2. Foam-lined 20ft containers, 24/7 drive-up access, CCTV — everything the chains offer except the price tag. Free quote today.
 
 **IMPORTANT:** Don't mention competitor names in ad copy (Google policy). The keyword match alone triggers the ad.

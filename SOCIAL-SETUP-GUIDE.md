@@ -59,7 +59,7 @@ Short-lived tokens expire in 1 hour. You need a long-lived one.
 4. Complete signup, verify email
 5. Fill in profile:
    - **Name:** Magna Park Self Storage
-   - **Bio:** Foam insulated 20ft container storage in Bournemouth. £55/week, no VAT, 24/7 access. 📍 BH11 9FA | 📞 01202 113252
+   - **Bio:** Foam insulated 20ft container storage in Bournemouth. £55/week, no VAT, 24/7 access. 📍 BH11 9FA | 📞 01202 113255
    - **Location:** Bournemouth, Dorset
    - **Website:** https://www.magnaparkselfstore.co.uk
    - **Profile pic:** Use the Magna Park logo (MAGNA PARK LOGO.PNG in your project folder)

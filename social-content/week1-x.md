@@ -24,7 +24,7 @@ Moving house? A 20ft container fits the contents of a 3-bed house.
 
 Store for a week or a year — flexible terms.
 
-📞 01202 113252
+📞 01202 113255
 
 #MovingHouse #Bournemouth #SelfStorage
 
@@ -72,7 +72,7 @@ Cars, motorbikes, trailers, classic cars.
 
 £55/week, no VAT, flexible terms.
 
-📞 01202 113252
+📞 01202 113255
 
 #VehicleStorage #Bournemouth #CarStorage
 
@@ -138,7 +138,7 @@ Don't rush. Store your stuff with us while you figure it out.
 
 £55/week. No pressure. No contracts.
 
-📞 01202 113252
+📞 01202 113255
 
 #Bournemouth #Dorset #Storage
 

@@ -23,12 +23,12 @@ Self-storage facility
 ## 4. Business Description (750 character limit — this is 742)
 
 ```
-Magna Park Self Storage offers foam-insulated 20ft shipping container storage in Bournemouth (BH11 9FA). Unlike standard shipping containers, every unit is fully foam-lined — preventing condensation and protecting your belongings from temperature extremes year-round. £55/week, no VAT, no hidden fees. Each container fits the contents of a 3-bedroom house (1,360 cubic feet). 24/7 drive-up access with personal pin code, perimeter CCTV, secure gated entry. Ideal for house moves, business stock, vehicles, student storage, tools, documents and classic cars. Flexible terms — no long contracts. Serving Bournemouth, Poole, Christchurch, Wimborne, Ferndown and the wider Dorset area. Call 01202 113252.
+Magna Park Self Storage offers foam-insulated 20ft shipping container storage in Bournemouth (BH11 9FA). Unlike standard shipping containers, every unit is fully foam-lined — preventing condensation and protecting your belongings from temperature extremes year-round. £55/week, no VAT, no hidden fees. Each container fits the contents of a 3-bedroom house (1,360 cubic feet). 24/7 drive-up access with personal pin code, perimeter CCTV, secure gated entry. Ideal for house moves, business stock, vehicles, student storage, tools, documents and classic cars. Flexible terms — no long contracts. Serving Bournemouth, Poole, Christchurch, Wimborne, Ferndown and the wider Dorset area. Call 01202 113255.
 ```
 
 ## 5. Address
 ```
-3 Magna Park, Provence Drive
+106 Provence Dr
 Bournemouth
 BH11 9FA
 United Kingdom
@@ -36,7 +36,7 @@ United Kingdom
 
 ## 6. Phone
 ```
-01202 113252
+01202 113255
 ```
 
 ## 7. Website
@@ -131,7 +131,7 @@ On your GBP profile, click "Ask a question" → ask it yourself from a personal 
 > Yes — short-term summer storage is popular with Bournemouth University and Arts University Bournemouth students. Pay weekly.
 
 **Q: Where exactly are you?**
-> 3 Magna Park, Provence Drive, Bournemouth BH11 9FA. We're 10 minutes from Bournemouth town centre, easy access from Poole, Christchurch and Ferndown.
+> 106 Provence Dr, Bournemouth BH11 9FA. We're 10 minutes from Bournemouth town centre, easy access from Poole, Christchurch and Ferndown.
 
 ## 13. Posts (weekly rhythm)
 

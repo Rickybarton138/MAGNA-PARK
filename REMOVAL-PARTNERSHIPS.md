@@ -102,7 +102,7 @@ Happy to pop round to yours for 15 minutes or I can show you the site — coffee
 Cheers,
 Ricky
 Magna Park Self Store Ltd
-01202 113252
+01202 113255
 magnaparkselfstore@outlook.com
 https://www.magnaparkselfstore.co.uk
 
@@ -136,7 +136,7 @@ Any appetite for a 15-minute chat? I can pop over or you're welcome here — wor
 Cheers,
 Ricky
 Magna Park Self Store Ltd
-01202 113252
+01202 113255
 magnaparkselfstore@outlook.com
 
 ---

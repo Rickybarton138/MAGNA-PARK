@@ -15,8 +15,8 @@ Looking for affordable, secure storage? Our foam insulated 20ft shipping contain
 
 Whether you're moving house, need business overflow space, or storing a vehicle — we've got you covered.
 
-📍 3 Magna Park, Provence Drive, Bournemouth, BH11 9FA
-📞 01202 113252
+📍 106 Provence Dr, Bournemouth, BH11 9FA
+📞 01202 113255
 🌐 www.magnaparkselfstore.co.uk
 
 #BournemouthStorage #ContainerStorage #SelfStorage #MagnaPark #Bournemouth #Dorset
@@ -44,7 +44,7 @@ This matters especially if you're storing:
 
 Don't risk your valuables in a standard container. Store them properly.
 
-📞 01202 113252 for a free quote
+📞 01202 113255 for a free quote
 🌐 www.magnaparkselfstore.co.uk
 
 #InsulatedStorage #ContainerStorage #Bournemouth #StorageSolutions #MagnaPark
@@ -67,7 +67,7 @@ A single container fits the contents of a 3-bed house.
 
 Take the pressure off your move.
 
-📞 01202 113252
+📞 01202 113255
 🌐 www.magnaparkselfstore.co.uk
 
 #MovingHouse #Bournemouth #SelfStorage #MagnaPark #Removals #Dorset
@@ -90,7 +90,7 @@ Running out of space at work? Our containers are perfect for:
 
 From just £55/week with no VAT — significantly cheaper than commercial warehouse space.
 
-📞 01202 113252
+📞 01202 113255
 🌐 www.magnaparkselfstore.co.uk
 
 #BusinessStorage #Bournemouth #SmallBusiness #TradeStorage #MagnaPark
@@ -114,7 +114,7 @@ No long-term contracts. Store for a week or a year.
 
 £55/week, no VAT.
 
-📞 01202 113252
+📞 01202 113255
 🌐 www.magnaparkselfstore.co.uk
 
 #VehicleStorage #CarStorage #Bournemouth #SecureStorage #MagnaPark
@@ -139,7 +139,7 @@ Perfect for:
 Drive up, load up, lock up. Simple.
 
 📍 Bournemouth, BH11 9FA
-📞 01202 113252
+📞 01202 113255
 🌐 www.magnaparkselfstore.co.uk
 
 #SpringClean #Declutter #Bournemouth #Storage #MagnaPark
@@ -155,7 +155,7 @@ Drive up, load up, lock up. Simple.
 
 If you're looking for honest, affordable container storage in Bournemouth — give us a call.
 
-📞 01202 113252
+📞 01202 113255
 🌐 www.magnaparkselfstore.co.uk
 
 #CustomerReview #Bournemouth #Storage #MagnaPark #SelfStorage
@@ -179,7 +179,7 @@ That's a 20ft foam insulated shipping container with:
 
 Why pay more for less space?
 
-📞 01202 113252
+📞 01202 113255
 🌐 www.magnaparkselfstore.co.uk
 
 #AffordableStorage #Bournemouth #ValueForMoney #ContainerStorage #MagnaPark

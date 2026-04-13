@@ -49,8 +49,8 @@ GBP_DIR.mkdir(exist_ok=True)
 BUSINESS_CONTEXT = """
 Magna Park Self Store — foam insulated 20ft shipping container storage in Bournemouth.
 - Price: £55/week, NO VAT, no hidden fees
-- Location: 3 Magna Park, Provence Drive, Bournemouth, BH11 9FA
-- Phone: 01202 113252
+- Location: 106 Provence Dr, Bournemouth, BH11 9FA
+- Phone: 01202 113255
 - Website: www.magnaparkselfstore.co.uk
 - Features: 24/7 access with personal pin code, CCTV security, perimeter fencing, foam insulated (no condensation), flexible terms (no long contracts), drive-up access
 - A single 20ft container fits contents of a 3-bed house (1,360 cubic feet)
@@ -283,7 +283,7 @@ Generate THREE versions of this post. Return them as a JSON object with these ex
 
 "instagram": An Instagram caption. Shorter than Facebook (80-150 words). More emoji-friendly (4-6 emojis). 15-20 relevant hashtags at the end (mix of broad and niche). No links in caption (mention 'link in bio' if needed). Punchy opening line to grab attention. Never use the phrases 'game changer', 'look no further', or 'hidden gem'.
 
-"gbp": A Google Business Profile post. Maximum 300 characters including spaces. Must include a CTA like 'Call us', 'Book today', or 'Visit our website'. Very concise and direct. No hashtags. Include the phone number 01202 113252.
+"gbp": A Google Business Profile post. Maximum 300 characters including spaces. Must include a CTA like 'Call us', 'Book today', or 'Visit our website'. Very concise and direct. No hashtags. Include the phone number 01202 113255.
 
 Return ONLY the JSON object, no markdown code fences, no extra text."""
 
@@ -407,11 +407,11 @@ def generate_branded_image(pillar, topic_text):
 
     # Bottom info
     draw.text((540, 740), "24/7 Access  |  CCTV  |  Foam Insulated", fill="white", font=font_tagline, anchor="mt")
-    draw.text((540, 780), "01202 113252  |  magnaparkselfstore.co.uk", fill=accent_color, font=font_tagline, anchor="mt")
+    draw.text((540, 780), "01202 113255  |  magnaparkselfstore.co.uk", fill=accent_color, font=font_tagline, anchor="mt")
 
     # Bottom bar with address
     draw.rectangle([0, 980, 1080, 1080], fill=overlay_color)
-    draw.text((540, 1020), "3 Magna Park, Provence Drive, Bournemouth, BH11 9FA", fill="white", font=font_tagline, anchor="mt")
+    draw.text((540, 1020), "106 Provence Dr, Bournemouth, BH11 9FA", fill="white", font=font_tagline, anchor="mt")
 
     # Generate unique filename
     date_str = datetime.now().strftime("%Y%m%d")

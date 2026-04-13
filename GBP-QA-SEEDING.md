@@ -87,7 +87,7 @@ Yes — short-term summer storage is popular with Bournemouth University and Art
 
 **Q: Where exactly are you?**
 ```
-3 Magna Park, Provence Drive, Bournemouth BH11 9FA. We're 10 minutes from Bournemouth town centre, easy access from Poole, Christchurch and Ferndown.
+106 Provence Dr, Bournemouth BH11 9FA. We're 10 minutes from Bournemouth town centre, easy access from Poole, Christchurch and Ferndown.
 ```
 
 ## Step 3 — Upvote your own answers (on Wife's phone)
