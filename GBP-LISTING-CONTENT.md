@@ -41,7 +41,7 @@ United Kingdom
 
 ## 7. Website
 ```
-https://www.magnaparkselfstore.co.uk
+https://magnaparkselfstore.co.uk
 ```
 
 ## 8. Hours
@@ -149,5 +149,5 @@ Once the above is live:
 - [ ] Upload all 10+ photos
 - [ ] Set up Messaging (GBP dashboard → Messages → turn ON) so customers can text you direct from Maps
 - [ ] Enable automatic review-reply notifications to your email
-- [ ] Add UTM tracking to your website link: `https://www.magnaparkselfstore.co.uk/?utm_source=google&utm_medium=organic&utm_campaign=gbp`
+- [ ] Add UTM tracking to your website link: `https://magnaparkselfstore.co.uk/?utm_source=google&utm_medium=organic&utm_campaign=gbp`
 

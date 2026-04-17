@@ -61,7 +61,7 @@ Short-lived tokens expire in 1 hour. You need a long-lived one.
    - **Name:** Magna Park Self Storage
    - **Bio:** Foam insulated 20ft container storage in Bournemouth. £55/week, no VAT, 24/7 access. 📍 BH11 9FA | 📞 01202 113255
    - **Location:** Bournemouth, Dorset
-   - **Website:** https://www.magnaparkselfstore.co.uk
+   - **Website:** https://magnaparkselfstore.co.uk
    - **Profile pic:** Use the Magna Park logo (MAGNA PARK LOGO.PNG in your project folder)
    - **Header:** Use the facebook cover SVG or create a banner showing the containers
 
@@ -92,8 +92,8 @@ Short-lived tokens expire in 1 hour. You need a long-lived one.
    - Go to App Settings → User authentication settings → Edit
    - Set **App permissions** to **Read and write**
    - Set **Type of App** to **Web App, Automated App or Bot**
-   - Callback URL: `https://www.magnaparkselfstore.co.uk` (doesn't matter for bot use)
-   - Website URL: `https://www.magnaparkselfstore.co.uk`
+   - Callback URL: `https://magnaparkselfstore.co.uk` (doesn't matter for bot use)
+   - Website URL: `https://magnaparkselfstore.co.uk`
    - Save
 
 ### Step 4: Give Me These Values
@@ -115,7 +115,7 @@ Short-lived tokens expire in 1 hour. You need a long-lived one.
 6. Fill in profile:
    - **Name:** Magna Park Self Storage
    - **Bio:** Foam insulated container storage in Bournemouth 📦 £55/week | No VAT | 24/7 access | Link below 👇
-   - **Website:** https://www.magnaparkselfstore.co.uk
+   - **Website:** https://magnaparkselfstore.co.uk
    - **Profile pic:** Magna Park logo
    - **Email:** magnaparkselfstore@outlook.com
 
@@ -134,7 +134,7 @@ Short-lived tokens expire in 1 hour. You need a long-lived one.
    - **Video Upload** (if available)
 5. Fill in the required business verification:
    - Business name: Magna Park Self Storage (or your registered company name)
-   - Business website: https://www.magnaparkselfstore.co.uk
+   - Business website: https://magnaparkselfstore.co.uk
    - Business type: Local Service
 6. Submit for review
 7. You'll receive an email when approved (typically 5-10 business days)
@@ -145,7 +145,7 @@ Short-lived tokens expire in 1 hour. You need a long-lived one.
    - **Client Key** (App ID)
    - **Client Secret**
 3. You'll also need to set up OAuth 2.0:
-   - Redirect URI: `https://www.magnaparkselfstore.co.uk/tiktok-callback`
+   - Redirect URI: `https://magnaparkselfstore.co.uk/tiktok-callback`
    - Scopes: `video.publish`, `video.upload`
 4. Generate an access token through the OAuth flow
 

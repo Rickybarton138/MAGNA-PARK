@@ -29,7 +29,7 @@
 
 ## Ad Group 1: Self Storage Bournemouth (Core)
 
-**Landing page:** `https://www.magnaparkselfstore.co.uk/self-storage-bournemouth.html`
+**Landing page:** `https://magnaparkselfstore.co.uk/self-storage-bournemouth.html`
 
 **Keywords (phrase + exact match):**
 ```
@@ -74,7 +74,7 @@
 
 ## Ad Group 2: Container Storage
 
-**Landing page:** `https://www.magnaparkselfstore.co.uk/container-storage-bournemouth.html`
+**Landing page:** `https://magnaparkselfstore.co.uk/container-storage-bournemouth.html`
 
 **Keywords:**
 ```
@@ -110,7 +110,7 @@
 
 ## Ad Group 4: Use Case — House Moves
 
-**Landing page:** `https://www.magnaparkselfstore.co.uk/house-move-storage-bournemouth.html`
+**Landing page:** `https://magnaparkselfstore.co.uk/house-move-storage-bournemouth.html`
 
 **Keywords:**
 ```
@@ -128,7 +128,7 @@
 
 ## Ad Group 5: Use Case — Business Storage
 
-**Landing page:** `https://www.magnaparkselfstore.co.uk/business-storage-bournemouth.html`
+**Landing page:** `https://magnaparkselfstore.co.uk/business-storage-bournemouth.html`
 
 **Keywords:**
 ```

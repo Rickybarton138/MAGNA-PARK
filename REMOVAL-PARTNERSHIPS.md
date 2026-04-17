@@ -104,7 +104,7 @@ Ricky
 Magna Park Self Store Ltd
 01202 113255
 magnaparkselfstore@outlook.com
-https://www.magnaparkselfstore.co.uk
+https://magnaparkselfstore.co.uk
 
 P.S. If you want to see the foam-lined interior before you decide, I'll send a quick phone video — it's the thing that genuinely separates us from a bog-standard container yard.
 
