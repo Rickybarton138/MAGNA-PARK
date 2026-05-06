@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Agreement | Magna Park Self Storage</title>
+    <meta name="description" content="The Magna Park Self Storage container rental agreement — full terms and conditions for storage at our Bournemouth site.">
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%232d5a3d' width='100' height='100' rx='12'/><rect fill='%23f8f6f3' x='20' y='35' width='60' height='30' rx='2'/></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <!--
+        IMPORTANT: keep these sections in sync with magna-park-crm/lib/contract-terms.ts.
+        That file is the source of truth for the per-customer PDF and the printable
+        blank-contract.pdf. If the wording diverges, customers will sign one version
+        of the agreement digitally and a different one on paper.
+    -->
+    <style>
+        :root{--ink:#1a1a1a;--paper:#f8f6f3;--green:#2d5a3d;--green-dark:#234830;--steel:#4a5568;--concrete:#e8e4df}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);line-height:1.7}
+        header{background:var(--green);color:var(--paper);padding:2rem}
+        header .container{max-width:800px;margin:0 auto}
+        .logo{display:flex;align-items:center;gap:.75rem;text-decoration:none;color:var(--paper);margin-bottom:2rem}
+        .logo-icon{width:44px;height:44px;background:rgba(255,255,255,.2);border-radius:8px;display:flex;align-items:center;justify-content:center}
+        .logo-icon::before{content:'';width:24px;height:14px;border:2px solid var(--paper);border-radius:2px}
+        .logo-text{font-family:'Instrument Serif',serif;font-size:1.4rem}
+        header h1{font-family:'Instrument Serif',serif;font-size:2.5rem;font-weight:400;margin-bottom:.5rem}
+        header p{opacity:.85}
+        main{max-width:800px;margin:0 auto;padding:3rem 2rem}
+        h2{font-family:'Instrument Serif',serif;font-size:1.5rem;font-weight:400;margin:2.5rem 0 1rem;color:var(--ink)}
+        p{margin-bottom:1rem;color:var(--steel)}
+        a{color:var(--green)}
+        .download-box{background:var(--green);color:var(--paper);padding:1.5rem 2rem;border-radius:12px;margin:0 0 2.5rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
+        .download-box .text strong{display:block;font-family:'Instrument Serif',serif;font-size:1.3rem;margin-bottom:.25rem;font-weight:400}
+        .download-box .text span{display:block;font-size:.92rem;opacity:.85}
+        .download-box a.btn{background:var(--paper);color:var(--green-dark);padding:.85rem 1.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:.95rem;white-space:nowrap}
+        .summary-box{background:rgba(45,90,61,.08);border-left:4px solid var(--green);padding:1.5rem;border-radius:0 8px 8px 0;margin:0 0 2.5rem}
+        .summary-box h2{margin-top:0;color:var(--green-dark)}
+        .summary-box ul{margin:0 0 0 1.25rem;color:var(--ink)}
+        .summary-box li{margin-bottom:.4rem;color:var(--ink)}
+        footer{background:var(--ink);color:var(--paper);padding:2rem;text-align:center;margin-top:4rem}
+        footer a{color:var(--paper);text-decoration:none}
+        footer a:hover{text-decoration:underline}
+        footer p{font-size:.9rem;opacity:.7;margin-top:1rem}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/" class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">Magna Park</span>
+            </a>
+            <h1>Storage Agreement</h1>
+            <p>Container rental terms &amp; conditions &middot; effective 7 May 2026</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="download-box">
+            <div class="text">
+                <strong>Walk in to sign on paper?</strong>
+                <span>Download a printable blank contract — fill in your details, sign, and bring it on the day.</span>
+            </div>
+            <a href="/blank-contract.pdf" class="btn" download>Download blank contract (PDF) &darr;</a>
+        </div>
+
+        <div class="summary-box">
+            <h2>Quick summary</h2>
+            <ul>
+                <li>£55/week for a 20ft foam-insulated container, no VAT</li>
+                <li>24/7 access via personal access code, CCTV monitored</li>
+                <li>Either side can end with 7 days&rsquo; written notice</li>
+                <li>You insure your own goods; the company doesn&rsquo;t</li>
+                <li>If rent goes 28+ days unpaid, the company can hold goods until paid</li>
+                <li>Governed by English law</li>
+            </ul>
+        </div>
+
+        <h2>1. The Agreement</h2>
+        <p>This agreement is between Magna Park Self Store Ltd ("the Company") and the Customer named on the booking, for the rental of the storage container listed at 106 Provence Dr, Bournemouth BH11 9FA ("the Site"). By signing this agreement (or by ticking the agreement checkbox at online booking) the Customer accepts these terms in full.</p>
+
+        <h2>2. Charges &amp; Payment</h2>
+        <p>The weekly rental charge is shown on the booking and is collected weekly by Stripe subscription on the payment card supplied at booking (online customers) or by standing order or card-on-file (walk-in customers). The first week is collected immediately. Rentals are prepaid; no refunds for part-weeks. If a payment fails the Company will retry within 3 working days; if it fails again the Customer&rsquo;s access code may be suspended until paid in full.</p>
+
+        <h2>3. Access</h2>
+        <p>The Customer is granted 24/7 access to the Site via the personal access code issued at booking. The access code is personal and must not be shared. The Company reserves the right to re-issue codes for security. CCTV is in operation at all times. The Company may enter the container without notice in cases of emergency, suspected illegal activity, or to comply with a lawful order; in non-emergency cases the Company will give the Customer 48 hours&rsquo; written notice before entry.</p>
+
+        <h2>4. Use of the Container</h2>
+        <p>The container may be used only for the lawful storage of the Customer&rsquo;s personal or business goods. The following are strictly prohibited: live animals; perishable food; flammable liquids or gases; explosives; firearms or ammunition; illegal drugs or stolen goods; asbestos; any item that emits fumes, odours or moisture sufficient to damage the container or neighbouring units; and anything the storage of which would breach UK law. The Customer must not sleep, work, or run any business operation from inside the container.</p>
+
+        <h2>5. Insurance</h2>
+        <p>The Company does not insure the Customer&rsquo;s goods. The Customer is responsible for arranging their own contents insurance for the value of the goods stored. The Company&rsquo;s liability for any loss or damage is limited to gross negligence by the Company and is in any case capped at four (4) weeks&rsquo; rental at the rate then in force.</p>
+
+        <h2>6. Lien for Unpaid Rent</h2>
+        <p>If any rental payment remains unpaid for 28 days after its due date, the Company has the right to (a) suspend the Customer&rsquo;s access code, (b) retain (a "lien" over) the goods stored in the container as security for the unpaid amount, and (c) after a further 14 days written notice to the Customer&rsquo;s last known email and postal address, sell or dispose of the stored goods to recover unpaid rent and reasonable removal/disposal costs. Any surplus from sale will be returned to the Customer.</p>
+
+        <h2>7. Ending the Agreement</h2>
+        <p>Either party may end this agreement by giving 7 days&rsquo; written notice (email is sufficient). On termination the Customer must remove all goods and return the container clean, empty, and in the same condition as at the start of the rental, fair wear and tear excepted. Any unpaid rentals, plus reasonable removal costs if goods remain after notice expires, will be recovered from the Customer. The Company may end this agreement immediately for serious breach (e.g. illegal use, non-payment beyond 28 days, or any breach of section 4).</p>
+
+        <h2>8. Data Protection</h2>
+        <p>The Company processes the Customer&rsquo;s personal data (name, email, phone, address, payment details, access logs, CCTV footage) under the UK GDPR for the legitimate purposes of operating the storage service, billing, security, and complying with legal obligations. CCTV is retained for 30 days. The Customer&rsquo;s rights are set out in the <a href="/privacy.html">privacy notice</a>.</p>
+
+        <h2>9. Governing Law</h2>
+        <p>This agreement is governed by the law of England and Wales. Any dispute arising from it is subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+
+        <h2>10. Signatures</h2>
+        <p>For online bookings the Customer signs by typing their full name into the booking form and ticking the agreement checkbox; the resulting electronic signature is recognised under the UK Electronic Communications Act 2000, s.7 and is countersigned by the Company on the same date. For walk-in customers, both parties sign and date the printable contract above.</p>
+
+        <p style="margin-top:2.5rem"><a href="/">&larr; Back to Magna Park Self Storage</a></p>
+    </main>
+
+    <footer>
+        <p>
+            <a href="/">Home</a> &middot;
+            <a href="/privacy.html">Privacy</a> &middot;
+            <a href="tel:01202113255">01202 113255</a> &middot;
+            <a href="mailto:magnaparkselfstore@outlook.com">magnaparkselfstore@outlook.com</a>
+        </p>
+        <p>&copy; 2026 Magna Park Self Store Ltd &middot; 106 Provence Dr, Bournemouth BH11 9FA</p>
+    </footer>
+</body>
+</html>
