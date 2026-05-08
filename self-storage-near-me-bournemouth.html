@@ -40,6 +40,21 @@
         footer{background:var(--ink);color:var(--paper);padding:4rem 0 2rem;border-top:1px solid rgba(255,255,255,.1)}.footer-content{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}.footer-brand .logo{color:var(--paper);margin-bottom:1rem}.footer-brand p{color:rgba(255,255,255,.6);font-size:.95rem;max-width:280px}.footer-column h4{font-family:'Instrument Serif',serif;font-size:1.1rem;margin-bottom:1.25rem}.footer-column ul{list-style:none}.footer-column li{margin-bottom:.75rem}.footer-column a{color:rgba(255,255,255,.6);text-decoration:none;font-size:.9rem;transition:color .2s}.footer-column a:hover{color:var(--paper)}.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:2rem;display:flex;justify-content:space-between;align-items:center;font-size:.85rem;color:rgba(255,255,255,.5)}
         @media(max-width:968px){.features-grid{grid-template-columns:1fr 1fr}.faq-grid{grid-template-columns:1fr}.footer-content{grid-template-columns:1fr 1fr}.nav-links,.nav-cta{display:none}.mobile-menu-btn{display:block}.price-highlight{flex-direction:column}}
         @media(max-width:580px){.container{padding:0 1.25rem}.features-grid{grid-template-columns:1fr}.footer-content{grid-template-columns:1fr}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}.lp-hero .hero-actions{flex-direction:column}.btn-primary,.btn-secondary{width:100%;justify-content:center}}
+    /* promo-cascade:v1 */
+.lp-hero .hero-badge{background:var(--green);color:var(--paper);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem;box-shadow:0 6px 18px rgba(45,90,61,.25);padding:.55rem 1.1rem}
+.lp-hero .hero-badge::before{content:'';width:8px;height:8px;background:var(--paper);border-radius:50%;margin-right:.25rem;animation:promo-pulse 2s infinite}
+@keyframes promo-pulse{0%,100%{opacity:1}50%{opacity:.5}}
+.hero-promo{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin:0 0 1.5rem;background:var(--paper);border:2px solid var(--green);border-radius:16px;padding:.5rem;box-shadow:0 12px 30px rgba(45,90,61,.12);max-width:640px}
+.hero-promo-step{padding:1rem .75rem;text-align:center;border-radius:12px}
+.hero-promo-step.is-free{background:var(--green);color:var(--paper)}
+.hero-promo-step .step-period{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;opacity:.7;margin-bottom:.4rem}
+.hero-promo-step.is-free .step-period{opacity:.9}
+.hero-promo-step .step-price{font-family:'Instrument Serif',serif;font-size:1.7rem;line-height:1;margin-bottom:.35rem}
+.hero-promo-step .step-tag{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--green)}
+.hero-promo-step.is-free .step-tag{color:var(--paper)}
+.hero-saving{display:inline-flex;align-items:center;gap:.5rem;font-size:1rem;color:var(--ink);margin:0 0 1.25rem}
+.hero-saving strong{font-family:'Instrument Serif',serif;font-style:italic;color:var(--green);font-size:1.4rem;font-weight:400}
+@media(max-width:580px){.hero-promo{grid-template-columns:1fr}}
     </style>
     <!-- Google Tag — Magna Park / Astra Ads conversion tracking -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=GT-T9C7SQKT"></script>
@@ -56,11 +71,11 @@
     <main>
         <section class="lp-hero">
             <div class="container">
-                <div class="hero-badge">Bournemouth BH11 — Near Kinson, Bearwood, Wallisdown</div>
+                <div class="hero-badge">★ 4 weeks free + 50% off month 2</div>
                 <h1>Self Storage <span>Near Me</span></h1>
                 <p class="hero-desc">Found us searching for 'self storage near me'? Good. Magna Park is right here in Bournemouth on Provence Drive — easily reached from Kinson, Bearwood, Wallisdown, Moordown, Winton, and Ensbury Park.</p>
                 <div class="hero-actions">
-                    <a href="https://app.magnaparkselfstore.co.uk/book" class="btn-primary">Book Online <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    <a href="https://app.magnaparkselfstore.co.uk/book" class="btn-primary">Claim 4 weeks free <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     <a href="tel:01202113255" class="btn-secondary">Call 01202 113255</a>
                 </div>
             </div>
@@ -122,7 +137,7 @@
             <div class="container">
                 <h2>Ready to get started?</h2>
                 <p>Get a free, no-obligation quote for your 20ft foam insulated container. \u00a355/week, no VAT, no hassle.</p>
-                <a href="https://app.magnaparkselfstore.co.uk/book" class="btn-primary">Book Online <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                <a href="https://app.magnaparkselfstore.co.uk/book" class="btn-primary">Claim 4 weeks free <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             </div>
         </section>
     </main>
