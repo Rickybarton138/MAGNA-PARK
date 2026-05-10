@@ -1,5 +1,27 @@
 # Removal Company Partnership Programme
 
+## ⚠️ Verified Exclusions (DO NOT PITCH — competitor ties)
+- **1st Choice Removals** — owns 50-unit warehouse AND is tied to **Canford Magna Self Storage** (Ricky's local intel 2026-04-20). Direct competitor relationship.
+- **Removals Unlimited** — owns its own storage facility near Castlepoint (containers + units, 24/7 CCTV). Competitor.
+
+## Storage-owning competitors in the local area (be alert for hidden ties)
+- Canford Magna Self Storage
+- Big Yellow (Bournemouth, Poole)
+- Safestore (Poole)
+- Access Self Storage
+
+## Verified CLEAN (Tier 1) as of 2026-04-20 — safe to pitch
+- **Westbourne Removals** (STRONGEST — website explicitly refers customers to local storage providers)
+- **Carlin Brown Removals** (storage listed but no infrastructure; no partner named)
+- **D.W. Removals** (explicit: "work with reliable local providers", no named partner)
+- **Orange Removals** ("arranges" storage, coordinates rather than operates)
+
+## UNCLEAR — verify by phone before emailing
+- **SOS Removals (Poole)** — website mentions "our storage units" + CCTV but no ownership details. Call 01202 671 738 to clarify. If they own, swap in **Pro-Removals (Christchurch)**.
+
+---
+
+
 **Objective:** Build a referral pipeline with local removal companies. Storage is a natural adjacent service — removers lose jobs when clients need mid-move storage and they can't offer it. Magna Park wins those jobs and pays a referral fee back.
 
 **Offer to them:**

@@ -2,9 +2,24 @@
 
 All 7 actions in order of impact. Work through them top to bottom. Each one has exact steps — no guesswork.
 
+## Progress (last updated 2026-04-20)
+- [x] Action 1 — Sitemap submitted, Success, 33 pages discovered (www + non-www properties)
+- [x] Action 2 — Review request texts sent, some already submitted
+- [x] Action 3 — Top 10 directories submitted over the weekend
+- [x] Action 4 — Press release emailed to Bournemouth Echo
+- [x] Action 5 — 5 removal companies emailed (Westbourne, Carlin Brown, D.W., Orange + SOS phone-first; 1st Choice + Removals Unlimited excluded — competitor ties)
+- [ ] Action 6 — 10 GBP site photos
+- [ ] Action 7 — GBP Q&A seeding (wait until Q&A section is live on listing)
+
+## Side task: Google Ads advertiser verification (deadline 2026-05-13)
+- Login: `astraremovals@gmail.com` / Customer ID `895-216-2424`
+- 3 tasks in Admin → Policy → Account → Verification
+- D-U-N-S number is the long-lead item (up to 30 days if new application needed) — start first
+- Progress as of 2026-04-20: in progress, paused until D&B lookup / Companies House details gathered
+
 ---
 
-## Action 1: Submit Sitemap in Search Console (30 seconds)
+## Action 1: Submit Sitemap in Search Console (30 seconds) ✅ DONE 2026-04-20
 
 **Why:** Google has only indexed 2 of your 33 pages. Until the sitemap is submitted, 31 pages are invisible. This is the single biggest unlock.
 
