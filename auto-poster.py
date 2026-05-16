@@ -26,13 +26,17 @@ from dotenv import load_dotenv
 # Fix Windows console encoding for emojis
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-# Load credentials from social-media-agent .env
-load_dotenv(Path.home() / "social-media-agent" / ".env")
+# Load credentials from this project's OWN .env — NOT the shared
+# ~/social-media-agent/.env. That shared file was repointed to a different
+# project, which silently published Magna Park posts to the wrong Facebook page.
+load_dotenv(Path(__file__).parent / ".env")
 
 # === CONFIG ===
-PAGE_ID = os.getenv("META_PAGE_ID", "1012907521897286")
+# Page + Instagram IDs are HARDCODED on purpose — they identify the Magna Park
+# accounts and must never be overridable by an env var another project controls.
+PAGE_ID = "1012907521897286"          # Magna Park Self Store Ltd — Facebook Page
+IG_ACCOUNT_ID = "17841480657315464"   # Magna Park — Instagram Business account
 PAGE_TOKEN = os.getenv("META_PAGE_ACCESS_TOKEN")
-IG_ACCOUNT_ID = os.getenv("META_INSTAGRAM_ACCOUNT_ID", "17841480657315464")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 BASE_DIR = Path(__file__).parent
@@ -589,10 +593,10 @@ def main():
     # Validate credentials
     if not args.dry_run:
         if not PAGE_TOKEN:
-            print("ERROR: META_PAGE_ACCESS_TOKEN not set in ~/social-media-agent/.env")
+            print("ERROR: META_PAGE_ACCESS_TOKEN not set in ~/magna-park/.env")
             return
     if not OPENAI_API_KEY:
-        print("ERROR: OPENAI_API_KEY not set in ~/social-media-agent/.env")
+        print("ERROR: OPENAI_API_KEY not set in ~/magna-park/.env")
         return
 
     log = load_log()
