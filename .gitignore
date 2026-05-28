@@ -11,3 +11,6 @@ __pycache__/
 # OS
 Thumbs.db
 .DS_Store
+
+# Invoices — contain bank details + customer PII, keep OUT of this PUBLIC repo
+invoices/
