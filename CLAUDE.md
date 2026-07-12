@@ -6,7 +6,7 @@
 **Sister project:** `~/magna-park-crm` — Next.js + Supabase + Stripe booking/CRM stack (separate repo).
 **Live URL:** magnaparkselfstore.co.uk (likely — check with deploy host before assuming)
 **Google Business Profile:** active — posts in `gbp-posts/` are seeded by the auto-poster
-**Google Ads Customer ID:** `895-216-2424` (login via `astraremovals@gmail.com`, see global memory `magna-park-google-ads.md`)
+**Google Ads Customer ID:** `457-230-3566` (login `magnaparkselfstore@gmail.com` — dedicated account, live + serving as of 2026-06-07; old IDs `895-216-2424` and Astra's `503-609-1207` are superseded). See global memory `magna-park-google-ads.md`
 
 ## Tech Stack
 - **Marketing site:** static HTML / vanilla CSS / minimal JS — no framework, no build step. Hosted (likely Netlify or GitHub Pages — confirm via DNS + repo settings before deploying)

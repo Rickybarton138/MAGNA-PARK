@@ -14,3 +14,4 @@ Thumbs.db
 
 # Invoices — contain bank details + customer PII, keep OUT of this PUBLIC repo
 invoices/
+auto-poster-errors.log

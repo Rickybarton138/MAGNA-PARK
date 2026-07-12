@@ -144,7 +144,7 @@ DAY_PILLAR_BOOSTS = {
     "fri": {"LOCAL": 1.5, "STORIES": 1.3, "SEASONAL": 1.2},  # Friday fun / local
 }
 
-TONES = ["casual", "friendly", "direct", "conversational", "warm", "upbeat"]
+TONES = ["warm", "friendly", "plain-spoken", "reassuring", "conversational", "down-to-earth"]
 
 
 # =====================================================================
@@ -211,7 +211,7 @@ def pick_pillar_and_topic(log, day="mon"):
 
         weights[name] = weight
 
-    # Normalize weights
+    # Normalise weights
     total_weight = sum(weights.values())
     if total_weight == 0:
         # Fallback: equal weights excluding last pillar
@@ -271,7 +271,7 @@ def generate_content(pillar, topic_text, tone):
     current_month = datetime.now().strftime("%B %Y")
     current_season = _get_season()
 
-    prompt = f"""You are a social media content writer for Magna Park Self Store, a local self-storage business in Bournemouth.
+    prompt = f"""You are writing organic social posts for Magna Park Self Store, a family-run self-storage yard in Bournemouth, Dorset.
 
 CONTENT PILLAR: {pillar} — {PILLARS[pillar]['description']}
 TOPIC: {topic_text}
@@ -281,13 +281,29 @@ CURRENT DATE: {current_month} ({current_season})
 BUSINESS DETAILS:
 {BUSINESS_CONTEXT}
 
-Generate THREE versions of this post. Return them as a JSON object with these exact keys:
+BRAND VOICE — this matters most:
+- Warm, plain-speaking and local. Sound like a helpful person who actually runs the yard, not a marketing department.
+- Confident but understated. Let the facts do the work — no hype, no hard sell, no salesy adjectives.
+- British English. Bournemouth/Dorset local texture where it fits (real places, real situations).
+- Specific and concrete beats vague and grand. One clear idea per post.
+- Storage is often stressful (a move, a downsize, a bereavement, a business under pressure). Be genuinely human about it.
 
-"facebook": A Facebook post. Conversational, friendly, 150-300 words. Can include a link to the website. Use 2-3 emojis naturally. Include a clear call to action (phone or website). Add 5-8 hashtags at the end. Never use the phrases 'game changer', 'look no further', or 'hidden gem'.
+WRITING RULES:
+- Open with a real hook — a relatable situation, a specific question, or a concrete detail. Never open with the business name or a generic line like "Looking for storage?".
+- Vary sentence length. Read it back: if it sounds like an advert, rewrite it.
+- Emojis: at most ONE, and only if it genuinely helps. Usually none. Never strings of emojis.
+- No exclamation-mark spam — one at most, ideally none.
+- End with a natural, low-pressure call to action.
+- Mention the current sign-up offer only when it fits the topic: first 8 weeks half price (£27.50/week, then £55/week), no VAT.
+- BANNED words/phrases (do not use): "game changer", "look no further", "hidden gem", "it's a steal", "nestled", "unlock", "elevate", "say goodbye to", "dive in", "hassle-free", "top-notch", "in today's world", "when it comes to", "peace of mind". Avoid corporate filler generally.
 
-"instagram": An Instagram caption. Shorter than Facebook (80-150 words). More emoji-friendly (4-6 emojis). 15-20 relevant hashtags at the end (mix of broad and niche). No links in caption (mention 'link in bio' if needed). Punchy opening line to grab attention. Never use the phrases 'game changer', 'look no further', or 'hidden gem'.
+Generate THREE versions as a JSON object with these exact keys:
 
-"gbp": A Google Business Profile post. Maximum 300 characters including spaces. Must include a CTA like 'Call us', 'Book today', or 'Visit our website'. Very concise and direct. No hashtags. Include the phone number 01202 113255.
+"facebook": 60-120 words. Conversational and human. May include the website link. At most one emoji. At most 3 relevant hashtags (or none). One clear call to action (phone 01202 113255 or the website).
+
+"instagram": 50-100 words. A strong opening line that works on its own as a hook. At most one emoji. 6-10 specific, relevant hashtags (local + storage niche — no generic repeated filler). No links (only say "link in bio" if needed).
+
+"gbp": A Google Business Profile post, max 300 characters. Plain and direct, no hashtags, no emoji. Include the phone number 01202 113255 and a clear CTA.
 
 Return ONLY the JSON object, no markdown code fences, no extra text."""
 
@@ -298,9 +314,9 @@ Return ONLY the JSON object, no markdown code fences, no extra text."""
             "Content-Type": "application/json",
         },
         json={
-            "model": "gpt-4o-mini",
+            "model": "gpt-4o",
             "messages": [
-                {"role": "system", "content": "You are a social media copywriter. Always respond with valid JSON only."},
+                {"role": "system", "content": "You are the voice of Magna Park Self Store, a family-run self-storage yard in Bournemouth. You write warm, plain-speaking, genuinely useful copy that sounds like a real local person, never like a marketing department. Always respond with valid JSON only."},
                 {"role": "user", "content": prompt},
             ],
             "temperature": 0.85,
@@ -339,97 +355,129 @@ def _get_season():
 # BRANDED IMAGE GENERATION
 # =====================================================================
 
+# Brand palette (from the marketing site)
+BRAND_GREEN_DARK = (35, 72, 48)     # #234830
+BRAND_GREEN_LIGHT = (120, 178, 140)  # soft light green for accents
+BRAND_PAPER = (248, 246, 243)        # #f8f6f3
+
+# Which real site photo backs each pillar (files live in site-photos/)
+PILLAR_PHOTO = {
+    "PROMO": "container-row-site-full.jpg",
+    "TIPS": "container-interior-furniture-full.jpg",
+    "LOCAL": "container-exterior-locked-full.jpg",
+    "STORIES": "container-interior-furniture-full.jpg",
+    "SEASONAL": "container-row-site-full.jpg",
+}
+
+
 def generate_branded_image(pillar, topic_text):
     """
-    Generate a branded image using Pillow with pillar-specific colors.
+    Build a branded 1080x1080 post image: a real site photo background, a dark
+    green gradient for legibility, the actual logo, and a clean info block.
+    Consistent brand treatment across every pillar — only the photo changes.
     Returns the filename of the generated image.
     """
     try:
         from PIL import Image, ImageDraw, ImageFont
     except ImportError:
         print("WARNING: Pillow not installed. Run: pip install Pillow")
-        print("Falling back to default image.")
         return "post-template.png"
 
-    width, height = 1080, 1080
-    bg_color = PILLARS[pillar]["color"]
+    W, H = 1080, 1080
 
-    # Create gradient-style background
-    img = Image.new("RGB", (width, height), bg_color)
-    draw = ImageDraw.Draw(img)
-
-    # Draw a darker overlay rectangle for text area
-    overlay_color = tuple(max(0, c - 40) for c in bg_color)
-    draw.rectangle([60, 250, 1020, 830], fill=overlay_color, outline=None)
-
-    # Draw accent lines
-    accent_color = tuple(min(255, c + 80) for c in bg_color)
-    draw.rectangle([60, 250, 1020, 260], fill=accent_color)
-    draw.rectangle([60, 820, 1020, 830], fill=accent_color)
-
-    # Load fonts (try system fonts, fall back to default)
-    def _load_font(size, bold=False):
-        font_names = [
-            "arialbd.ttf" if bold else "arial.ttf",
-            "Arial Bold.ttf" if bold else "Arial.ttf",
-            "calibrib.ttf" if bold else "calibri.ttf",
-        ]
-        for font_name in font_names:
-            try:
-                return ImageFont.truetype(font_name, size)
-            except OSError:
-                continue
-        # Try Windows font path
-        for font_name in font_names:
-            try:
-                return ImageFont.truetype(f"C:/Windows/Fonts/{font_name}", size)
-            except OSError:
-                continue
+    def _font(size, bold=False):
+        names = (["arialbd.ttf", "calibrib.ttf", "segoeuib.ttf"] if bold
+                 else ["arial.ttf", "calibri.ttf", "segoeui.ttf"])
+        for n in names:
+            for p in (n, f"C:/Windows/Fonts/{n}"):
+                try:
+                    return ImageFont.truetype(p, size)
+                except OSError:
+                    continue
         return ImageFont.load_default()
 
-    font_title = _load_font(52, bold=True)
-    font_body = _load_font(36)
-    font_tagline = _load_font(28)
-    font_pillar = _load_font(24, bold=True)
+    def _cover(im, w, h):
+        """Scale + centre-crop an image to exactly w x h, biassed slightly high."""
+        ratio = max(w / im.width, h / im.height)
+        im = im.resize((int(im.width * ratio) + 1, int(im.height * ratio) + 1))
+        x = (im.width - w) // 2
+        y = (im.height - h) // 3  # bias toward the top of the frame
+        return im.crop((x, y, x + w, y + h))
 
-    # Draw pillar badge
-    pillar_label = pillar.upper()
-    draw.rounded_rectangle([60, 180, 60 + len(pillar_label) * 18 + 40, 240], radius=10, fill=accent_color)
-    draw.text((80, 192), pillar_label, fill="white", font=font_pillar)
+    # --- background: a real site photo (falls back to solid brand green) ---
+    photo = BASE_DIR / "site-photos" / PILLAR_PHOTO.get(pillar, "container-row-site-full.jpg")
+    if photo.exists():
+        img = _cover(Image.open(photo).convert("RGB"), W, H)
+    else:
+        img = Image.new("RGB", (W, H), BRAND_GREEN_DARK)
 
-    # Business name
-    draw.text((540, 290), "MAGNA PARK", fill="white", font=font_title, anchor="mt")
-    draw.text((540, 355), "SELF STORE", fill=accent_color, font=font_title, anchor="mt")
+    # --- legibility overlay: gentle overall darken + strong bottom green fade ---
+    overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    od = ImageDraw.Draw(overlay)
+    od.rectangle([0, 0, W, H], fill=BRAND_GREEN_DARK + (55,))
+    fade_top = 520
+    for y in range(fade_top, H):
+        t = (y - fade_top) / (H - fade_top)
+        a = int(min(240, (t ** 1.15) * 240))
+        od.line([(0, y), (W, y)], fill=BRAND_GREEN_DARK + (a,))
+    img = Image.alpha_composite(img.convert("RGBA"), overlay).convert("RGB")
+    draw = ImageDraw.Draw(img, "RGBA")
 
-    # Topic text (wrapped)
-    short_topic = topic_text.split("—")[0].strip() if "—" in topic_text else topic_text[:50]
-    _draw_wrapped_text(draw, short_topic, font_body, "white", 540, 440, 880)
+    # --- real logo, cropped to its white card, top-left ---
+    logo_file = BASE_DIR / "logo-square-1024.png"
+    if logo_file.exists():
+        logo = Image.open(logo_file).convert("RGBA")
+        lw, lh = logo.size
+        logo = logo.crop((int(lw * 0.115), int(lh * 0.235), int(lw * 0.885), int(lh * 0.765)))
+        bw = 330
+        logo = logo.resize((bw, int(logo.height * (bw / logo.width))))
+        # soft white rounded card behind the logo for a clean badge
+        pad = 22
+        card = Image.new("RGBA", (logo.width + pad * 2, logo.height + pad * 2), (0, 0, 0, 0))
+        ImageDraw.Draw(card).rounded_rectangle(
+            [0, 0, card.width - 1, card.height - 1], radius=18, fill=(255, 255, 255, 240))
+        img.paste(card, (46, 46), card)
+        img.paste(logo, (46 + pad, 46 + pad), logo)
 
-    # Price callout
-    draw.text((540, 620), "From just £55/week", fill=accent_color, font=font_body, anchor="mt")
-    draw.text((540, 670), "NO VAT  |  No Hidden Fees", fill="white", font=font_tagline, anchor="mt")
+    # --- headline (short topic), left-aligned, wrapped ---
+    def _wrap(text, font, max_w):
+        words, lines, cur = text.split(), [], ""
+        for w in words:
+            trial = (cur + " " + w).strip()
+            if draw.textlength(trial, font=font) <= max_w:
+                cur = trial
+            else:
+                if cur:
+                    lines.append(cur)
+                cur = w
+        if cur:
+            lines.append(cur)
+        return lines
 
-    # Bottom info
-    draw.text((540, 740), "24/7 Access  |  CCTV  |  Foam Insulated", fill="white", font=font_tagline, anchor="mt")
-    draw.text((540, 780), "01202 113255  |  magnaparkselfstore.co.uk", fill=accent_color, font=font_tagline, anchor="mt")
+    short = topic_text.split("—")[0].strip()
+    if len(short) > 58:
+        short = short[:58].rsplit(" ", 1)[0]
+    hf = _font(50, bold=True)
+    y = 600
+    for line in _wrap(short, hf, 940)[:2]:
+        draw.text((60, y), line, fill=BRAND_PAPER, font=hf)
+        y += 62
 
-    # Bottom bar with address
-    draw.rectangle([0, 980, 1080, 1080], fill=overlay_color)
-    draw.text((540, 1020), "106 Provence Dr, Bournemouth, BH11 9FA", fill="white", font=font_tagline, anchor="mt")
+    # --- accent divider + key info + contact ---
+    draw.rectangle([60, 828, 250, 835], fill=BRAND_GREEN_LIGHT)
+    draw.text((60, 858), "£55/week   ·   No VAT   ·   Flexible terms", fill=BRAND_PAPER, font=_font(30, bold=True))
+    draw.text((60, 904), "24/7 Access    ·    CCTV    ·    Foam Insulated", fill=(222, 232, 224), font=_font(26))
+    draw.text((60, 986), "01202 113255", fill=BRAND_PAPER, font=_font(36, bold=True))
+    draw.text((60, 1034), "magnaparkselfstore.co.uk   ·   Bournemouth", fill=BRAND_GREEN_LIGHT, font=_font(26))
 
-    # Generate unique filename
-    date_str = datetime.now().strftime("%Y%m%d")
-    slug = pillar.lower()
-    filename = f"{date_str}-{slug}.png"
-    filepath = IMAGE_DIR / filename
-    img.save(filepath, "PNG", quality=95)
-    print(f"Image generated: {filepath}")
-
+    filename = f"{datetime.now().strftime('%Y%m%d')}-{pillar.lower()}.png"
+    img.save(IMAGE_DIR / filename, "PNG", quality=95)
+    print(f"Image generated: {IMAGE_DIR / filename}")
     return filename
 
 
 def _draw_wrapped_text(draw, text, font, fill, x, y, max_width):
-    """Draw text centered and wrapped within max_width."""
+    """Draw text centred and wrapped within max_width."""
     words = text.split()
     lines = []
     current_line = ""
@@ -593,8 +641,9 @@ def main():
     # Validate credentials
     if not args.dry_run:
         if not PAGE_TOKEN:
+            _log_failure("META_PAGE_ACCESS_TOKEN not set/empty in ~/magna-park/.env — cannot post. Reconnect the Facebook page and refresh the token.")
             print("ERROR: META_PAGE_ACCESS_TOKEN not set in ~/magna-park/.env")
-            return
+            sys.exit(1)
     if not OPENAI_API_KEY:
         print("ERROR: OPENAI_API_KEY not set in ~/magna-park/.env")
         return
@@ -717,6 +766,26 @@ def main():
     print(f"GBP:       Saved to gbp-posts/{gbp_filename}")
     print(f"Log:       Updated post-log.json ({len(log)} total entries)")
     print(f"{'=' * 60}\n")
+
+    # --- Fail loudly so Task Scheduler surfaces the problem ---
+    # Both posts failing on a live run almost always means a dead Meta token.
+    # Exit non-zero (and log to a file) so a broken run isn't reported as success.
+    if not args.dry_run and not (fb_success and ig_success):
+        failed = [p for p, ok in (("Facebook", fb_success), ("Instagram", ig_success)) if not ok]
+        _log_failure(f"Live run posted to none/some platforms — FAILED: {', '.join(failed)}. Likely an expired Meta token.")
+        sys.exit(1)
+
+
+def _log_failure(message):
+    """Append a timestamped failure line to auto-poster-errors.log so silent
+    scheduler runs leave a visible trail. Best-effort — never raises."""
+    try:
+        here = os.path.dirname(os.path.abspath(__file__))
+        line = f"{datetime.now().isoformat()} {message}\n"
+        with open(os.path.join(here, "auto-poster-errors.log"), "a", encoding="utf-8") as f:
+            f.write(line)
+    except Exception:
+        pass
 
 
 def _get_today_short():
